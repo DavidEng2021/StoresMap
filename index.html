@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>蔬果商家地圖</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+    </style>
+    <!-- 思源體字形 -->
+
+    <!-- 蓋板網頁********** -->
+    <link rel="stylesheet" href="healthAdvice.css">
+
+</head>
+
+<body>
+    <!-- 蓋板網頁********** -->
+    <div class="popup">
+        <div class="overlay"></div>
+        <!--test -->
+
+
+        <div class="containerpopup">
+
+            <div class="advice1">
+                <div class="textbox">
+                    <p id="advice2"></p>
+                </div>
+            </div>
+
+            <form class="form">
+                <!-- 特效 -->
+                <span class="anima"></span>
+                <span class="anima"></span>
+                <span class="anima"></span>
+                <span class="anima"></span>
+
+                <h3 class="title">健康小測試!</h3>
+
+                <div id="orangeBox">
+                    <span id="x" title="關閉視窗">X</span>
+                </div>
+                <!-- 關閉圖標 -->
+
+                <div class="number">
+                    <label for="weight">體重</label>
+                    <input type="text" id="wei" name="weight">
+                    <label for="hight">身高</label>
+                    <input type="text" id="hih" name="hight">
+                    <label for="age">年齡</label>
+                    <input type="text" id="age" name="age">
+                </div>
+                <!-- <div class="check">
+                    <p>口味偏好(選填)</p>
+                    <label for="sow">酸</label>
+                    <input name="sow" type="checkbox" id="sow" value="酸">
+                    <label for="sweet">甜</label>
+                    <input name="sweet" type="checkbox" id="swe" value="甜">
+                    <label for="bitter">苦</label>
+                    <input name="bitter" type="checkbox" id="bit" value="苦">
+                </div> -->
+                <button type="button" class="button-1" id="button">確定</button>
+                <input type="reset" value="重設" class="reset">
+            </form>
+        </div>
+
+
+
+        <script src="healthAdvice.js"></script>
+    </div>
+    <!-- 蓋板網頁********** -->
+
+    <div class="container" style="margin-bottom: 50px;">
+        <!-- 改過下方margin -->
+
+        <div class="mapbox">
+            <div class="searchWrap">
+                <input type="text" class="searchBar" placeholder="輸入蔬果名稱">
+                <button class="searchBtn" title="點擊搜尋">搜尋</button>
+            </div>
+            <span class="cloud one"></span>
+            <span class="cloud two"></span>
+            <h1>網站店家地圖</h1>
+            <div id="map"></div>
+        </div>
+
+
+        <div class="info">
+            <img class="farmer" src="/pics/farmer.png" alt="farmer">
+            <div class="infoBox">
+                <!-- <img class="pic" src=https://picsum.photos/300/250></img> -->
+                <div class="image"></div>
+                <div class="text">
+                    <p>點選左邊地圖觀看網站合作店家!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVfU4awFwCaW8e9cD3f8ibIQLneKtK1DM&map_ids=195385c38c63e7fe&callback=initMap">
+        </script>
+
+</body>
+
+</html>
